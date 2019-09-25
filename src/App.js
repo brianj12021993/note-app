@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
 import './App.css';
 import Nav from './components/Nav';
 import List from './components/List';
@@ -15,12 +15,11 @@ class App extends Component {
 
   toggleNote = () => {
     this.setState({
-      <Nav toggleNote={this.toggleNote} />
       showNote: ! this.state.showNote
     });
   }
 
-  render
+  render() {
     const { showNote } = this.state;
 
     return (
