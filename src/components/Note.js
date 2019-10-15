@@ -11,7 +11,7 @@ class Note extends React.Component {
     	this.props.submitNote(formData, this.props.note.id);
   }
 
-  class="language-jsx">renderTagForm() {
+  renderTagForm() {
    if (!this.props.newTag) {
   	return (
     <span>
@@ -23,6 +23,16 @@ class Note extends React.Component {
             add circle
         </i>
     </span>
+    );
+   } else {
+   	 return (
+      <form>
+        <input
+          className="tag-input"
+          type="text"
+          placeholder="Tag Name..."
+         />
+      </form>
     );
    }
   }

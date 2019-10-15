@@ -15,7 +15,8 @@ class App extends Component {
       notes: [],
       note: {},
       newTag: false
-  }
+  };
+}
 
   toggleNote = () => {
     this.setState({
